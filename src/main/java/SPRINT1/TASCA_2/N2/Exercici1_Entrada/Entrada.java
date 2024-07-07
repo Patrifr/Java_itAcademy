@@ -72,12 +72,14 @@ public class Entrada {
         }
         return numIntro;
     }
-    public static char llegirChar(String missatge){
+    public static char llegirChar(String missatge) throws Exception {
+
         char charIntro = ' ';
         boolean check = false;
+
         while(!check){
-            System.out.println(missatge);
             try{
+                System.out.println(missatge);
                 charIntro = entry.next().charAt(0);
                 check = true;
             }catch(Exception e){
@@ -87,5 +89,48 @@ public class Entrada {
         }
         return charIntro;
     }
+    public static String llegirString(String missatge){
+        String stringIntro = "";
+        boolean check = false;
 
+        while(!check){
+            System.out.println(missatge);
+            try{
+                stringIntro = entry.nextLine();
+
+                if(stringIntro.isEmpty()){
+                    throw new Exception();
+                }else{
+                    check = true;
+                }
+            }catch (Exception e){
+                System.out.println("Error. Introdueix un String: ");
+            }
+        }
+        return stringIntro;
+    }
+   public static boolean llegirSiNo(String missatge){
+        String letraIntro = "";
+        boolean booleanResp = false;
+        boolean check = false;
+
+        while(!check){
+            System.out.println(missatge);
+            try {
+                letraIntro = entry.nextLine();
+                if (letraIntro.equalsIgnoreCase("s")){
+                    booleanResp = true;
+                    check = true;
+                } else if ( letraIntro.equalsIgnoreCase("n")){
+                    booleanResp = false;
+                    check = true;
+                }else{
+                    throw new Exception();
+                }
+            } catch (Exception e){
+                System.out.println("Error. Introdueix un boolean vàlid (S o N): ");
+            }
+        }
+       return booleanResp;
+   }
 }
