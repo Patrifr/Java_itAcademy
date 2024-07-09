@@ -6,7 +6,7 @@ public class main {
     public static void main (String[] args) throws Exception {
         Scanner entry = new Scanner(System.in);
 
-      /* byte entry1 = Entrada.llegirByte("Introdueix la teva edat:");
+       byte entry1 = Entrada.llegirByte("Introdueix la teva edat:");
         System.out.println("La edat introduïda és: " + entry1);
 
         int entry2 = Entrada.llegirInt("Introdueix el teu número preferit:");
@@ -19,7 +19,7 @@ public class main {
         System.out.println("El número introduït és: " + entry4);
 
         char entry5 = Entrada.llegirChar("Introdueix un char: ");
-        System.out.println("El char introduït és: " + entry5);*/
+        System.out.println("El char introduït és: " + entry5);
 
         String entry6 = Entrada.llegirString("Introdueix un String:");
         System.out.println("El String introduït és: " + entry6);

@@ -16,11 +16,11 @@ public class main {
     venda1.setLlistaProductes(producte3);
 
     venda1.mostrarLlista();
-    venda1.CalcularTotal(); //Calcula el total dels productes a la llista
+    venda1.CalcularTotal();
 
-    venda2.CalcularTotal();//Prova exception persionalitzada
+    venda2.CalcularTotal();
 
-    try{ //Prova ArrayOutOfBounds
+    try{
          System.out.println(ArrayTest[5]);
     } catch (ArrayIndexOutOfBoundsException e){
         System.out.println(e.getMessage());

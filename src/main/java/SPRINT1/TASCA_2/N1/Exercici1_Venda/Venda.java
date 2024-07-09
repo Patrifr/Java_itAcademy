@@ -10,6 +10,7 @@ public class Venda {
         this.preuTotal = preuTotal;
         this.llistaProductes = new ArrayList<Producte>();
     }
+
     public float getPreuTotal(){
         return this.preuTotal;
     }
@@ -20,10 +21,10 @@ public class Venda {
     public void setPreuTotal(float preuTotal) {
         this.preuTotal = preuTotal;
     }
-
     public void setLlistaProductes(Producte producte) {
         this.llistaProductes.add(producte);
     }
+
     public void CalcularTotal() throws VendaBuidaException {
         try{
             if(this.getLlistaProductes().isEmpty()){
@@ -38,6 +39,7 @@ public class Venda {
             System.out.println(e.getMessage());
         }
     }
+
     public void mostrarLlista(){
        System.out.println("La llista de productes a la cistella es: ");
        for(Producte producte : this.getLlistaProductes()){
