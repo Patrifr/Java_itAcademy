@@ -1,11 +1,11 @@
 package SPRINT1.TASCA_1.N1.Exercici2_Cotxe;
 
 public class Cotxe {
-	static final String marca = "BMW";
-	static String model = "";
-	final int potencia;
+	private static final String marca = "BMW";
+	private static String model;
+	private final int potencia;
 	
-	Cotxe(String marca, String model, int potencia){
+	public Cotxe(String marca, String model, int potencia){
 		Cotxe.model = model; //model es pot inicialitzar accedint de forma estatica. 
 		this.potencia = potencia; // potencia es pot inicialitzar, en canvi marca no es pot al constructor.
 	}
@@ -18,12 +18,15 @@ public class Cotxe {
 	public int getPotencia() {
 		return this.potencia;
 	}
+
 	public void setModel(String model) {
 		Cotxe.model = model;
 	}
+
 	public String accelerar() {
 		return "El cotxe està accelerant.";
 	}
+
 	public static String frenar() {
 		return "El cotxe està frenant.";
 	}
