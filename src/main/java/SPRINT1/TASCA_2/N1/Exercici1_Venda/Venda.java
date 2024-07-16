@@ -25,7 +25,7 @@ public class Venda {
         this.llistaProductes.add(producte);
     }
 
-    public void CalcularTotal() throws VendaBuidaException {
+    public void calcularTotal() throws VendaBuidaException {
         try{
             if(this.getLlistaProductes().isEmpty()){
                 throw new VendaBuidaException("Per fer una venda primer has d’afegir productes.");

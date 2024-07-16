@@ -16,9 +16,9 @@ public class main {
     venda1.setLlistaProductes(producte3);
 
     venda1.mostrarLlista();
-    venda1.CalcularTotal();
+    venda1.calcularTotal();
 
-    venda2.CalcularTotal();
+    venda2.calcularTotal();
 
     try{
          System.out.println(ArrayTest[5]);
