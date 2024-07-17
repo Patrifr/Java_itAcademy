@@ -4,9 +4,9 @@ import java.io.Serializable;
 @Serializer(directory = "C:/Users/patri/Desktop/Java_itAcademy/src/main/java/SPRINT1/TASCA_7/N2/Ex1_Json")
 
 public class Person implements Serializable{
-    public String name;
-    public String work;
-    public int age;
+    private String name;
+    private String work;
+    private int age;
 
     public Person(String name, String work, int age){
         this.name = name;
