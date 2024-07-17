@@ -1,11 +1,11 @@
 package SPRINT1.TASCA_7.N1.Ex2_Deprecated;
 
-public abstract class Worker {
+public abstract class Employee {
     private String name;
     private String lastname;
     private double hourPrice;
 
-    public Worker (String name, String lastname, double hourPrice){
+    public Employee(String name, String lastname, double hourPrice){
         this.name = name;
         this.lastname = lastname;
         this.hourPrice = hourPrice;
