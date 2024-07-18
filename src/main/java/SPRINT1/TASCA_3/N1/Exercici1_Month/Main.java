@@ -26,7 +26,7 @@ public class Main {
 
         monthIterator  = listMonth.iterator();
 
-        System.out.println("For Each:");
+        System.out.println("Using the for Each loop to iterate over the ArrayList :");
         for(Month month : listMonth){
             System.out.println(month.getName());
         }
@@ -34,7 +34,7 @@ public class Main {
         HashSet<Month> monthHashSet = new HashSet<Month>(listMonth);
         monthHashSet.add(august);
 
-        System.out.println("\nIterator:");
+        System.out.println("Using the Iterator to iterate over the HashSet and checking there's no duplicated objects:");
         while(monthIterator.hasNext()){
             System.out.println(monthIterator.next().getName());
         }

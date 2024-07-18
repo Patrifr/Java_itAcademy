@@ -17,9 +17,13 @@ public class Main {
 
         ListIterator<Integer> integerListIterator = integerList1.listIterator();
 
+        System.out.println("Created a List<Integer> and used the .hasNext() method to iterate over the List until " +
+                            "there's no more integers using the .Next() method:");
         while(integerListIterator.hasNext()){
             System.out.println(integerListIterator.next());
         }
+        System.out.println("Reversing the list looping through the list in reverse and adding the integers in that" +
+                            "order on a new list and printing it: ");
         while(integerListIterator.hasPrevious()){
             reverseList.add(integerListIterator.previous());
         }

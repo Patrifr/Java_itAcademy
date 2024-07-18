@@ -49,7 +49,7 @@ public class Countries {
 
         BufferedReader reader = null;
         try {
-            FileReader countries = new FileReader("C:/Users/patri/Desktop/Patri/Programacion/SPRINT1/TASCA_3/N1/Exercici3_Countries/countries.txt");
+            FileReader countries = new FileReader("src/main/java/SPRINT1/TASCA_3/N1/Exercici3_Countries/countries.txt");
             reader = new BufferedReader(countries);
             String data;
 
@@ -66,10 +66,9 @@ public class Countries {
         return fileMap;
     }
     public static void saveUserData(String name, int points){
-        String data;
-        try {
-            FileWriter fileUser = new FileWriter("UserData.txt",true);
-            fileUser.write("User name: " + name + " - Total points: " + points + ".");
+        try (FileWriter writer = new FileWriter("src/main/java/SPRINT1/TASCA_3/N1/Exercici3_Countries/UserData.txt",true)){
+            String data = "User name: " + name + " - Total points: " + points + ".";
+            writer.write(data);
             System.out.println("The file has been successfully written.");
         } catch (IOException e) {
             System.out.println(e.getMessage());
